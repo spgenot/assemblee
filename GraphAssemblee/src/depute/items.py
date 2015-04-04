@@ -13,4 +13,4 @@ class DeputeItem(scrapy.Item):
     name = scrapy.Field()
     link = scrapy.Field()
     partie = scrapy.Field()
-    pass
+    
