@@ -13,5 +13,5 @@ class DeputeInfoSpider(scrapy.Spider):
         item = DeputeInfoItem()
         item["party"] = hxs.select('//td[@id="cbfv_55"]/text()').extract()
         item["name"] = hxs.select('//h1[@class="title"]/span/span/text()').extract()
-        item["twitter"] = hxs.select('//td[@id="cbfv_60"]/a[@href]').extract()
+        item["twitter"] = hxs.select('//td[@id="cbfv_60"]/a/text()').extract()
         yield item
