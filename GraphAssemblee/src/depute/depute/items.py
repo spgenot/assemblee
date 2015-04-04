@@ -13,3 +13,8 @@ class DeputeItem(scrapy.Item):
     name = scrapy.Field()
     link = scrapy.Field()
     pass
+
+class DeputeInfoItem(scrapy.Item):
+    name = scrapy.Field()
+    party = scrapy.Field()
+    twitter = scrapy.Field()
