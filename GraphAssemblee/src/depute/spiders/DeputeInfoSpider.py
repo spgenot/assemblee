@@ -1,5 +1,6 @@
 import scrapy
-from depute.depute.items import DeputeInfoItem
+from depute.items import DeputeInfoItem
+from scrapy.selector.lxmlsel import HtmlXPathSelector
 
 class DeputeInfoSpider(scrapy.Spider):
     name = "DeputeInfo"
