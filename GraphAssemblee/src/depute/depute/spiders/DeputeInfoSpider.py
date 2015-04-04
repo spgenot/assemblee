@@ -1,13 +1,13 @@
 from scrapy.spider import BaseSpider
 from scrapy.selector import HtmlXPathSelector
-from nettuts.items import NettutsItem
+from depute.depute.items import DeputeInfoItem
 from scrapy.http import Request
 
 class DeputeInfoSpider(BaseSpider):
     name = "DeputeInfo"
     allowed_domains    = ["http://www.elus20.fr/"]
    
-    #start_urls    = 
+    start_urls    = ["http://www.elus20.fr/marie-christine-arnautu"]
 
     def parse(self, response):
         hxs     = HtmlXPathSelector(response)
