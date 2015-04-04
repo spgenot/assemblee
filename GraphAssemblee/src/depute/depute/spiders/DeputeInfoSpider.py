@@ -1,9 +1,7 @@
-from scrapy.spider import BaseSpider
-from scrapy.selector import HtmlXPathSelector
+import scrapy
 from depute.depute.items import DeputeInfoItem
-from scrapy.http import Request
 
-class DeputeInfoSpider(BaseSpider):
+class DeputeInfoSpider(scrapy.Spider):
     name = "DeputeInfo"
     allowed_domains    = ["http://www.elus20.fr/"]
    
